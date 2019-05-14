@@ -8,10 +8,11 @@ import Home from '../home';
 import Maquette from '../maquettes/';
 import Menu from '../menu';
 import Bonus from '../bonus';
+import {title, titleDiv, global} from './style';
 
 const Global = () =>
   <Router>
-    <div>
+    <div >
       <Navigation/>
       <Route exact path={'/signup'} component={SignupPage}/>
       <Route exact path={'/menu'} component={Menu}/>
@@ -19,6 +20,9 @@ const Global = () =>
       <Route exact path={'/auth'} component={Auth}/>
       <Route exact path={'/maquette1'} component={Home}/>
       <Route exact path={'/maquette2'} component={Maquette}/>
+      <div style={titleDiv}>
+        <h1 style={title}>Matcha !</h1>
+      </div>
     </div>
   </Router>
 

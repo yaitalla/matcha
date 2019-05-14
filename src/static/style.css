@@ -4,5 +4,9 @@
 }
 
 body {
-
+  height: 95vh;
+  width: 95vw;
+  background-image: url("couple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
