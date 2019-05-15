@@ -1,23 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import css from './style.js';
-import { btnStyle, btnStyles, btn } from './styles';
+import { homebtn, signupbtn, loginbtn, container, noBullet, item } from './style';
 
 const Navigation = () =>
 
 //<div style={css.}></div>
-<div style={css.container}>
-  <div>
-  </div>
-  <ul style={css.noBullet}>
-    <li style={css.item}>
-      <Link to={'/'}><button style={btnStyle}> home </button> </Link>
+<div style={container}>
+  
+  <ul style={noBullet}>
+    <li style={item}>
+      <Link to={'/'}><button style={homebtn}> HOME </button> </Link>
     </li>
-    <li style={css.item}>
-      <Link to={'/signup'}><button style={btnStyles}> signup </button> </Link>
+    <li style={item}>
+      <Link to={'/signup'}><button style={signupbtn}> SIGN UP </button> </Link>
     </li>
-    <li style={css.item}>
-      <Link to={'/auth'}><button style={btn}>login</button> </Link>
+    <li style={item}>
+      <Link to={'/auth'}><button style={loginbtn}>LOG IN</button> </Link>
     </li>
 
   </ul>

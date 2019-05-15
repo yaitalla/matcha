@@ -8,7 +8,12 @@ import Home from '../home';
 import Maquette from '../maquettes/';
 import Menu from '../menu';
 import Bonus from '../bonus';
-import {title, titleDiv, global} from './style';
+import {title, titleDiv, global, imgDiv} from './style';
+
+//import photo from './picture.jpeg';
+// <div style={imgDiv}>
+// <img src={photo}></img>
+// </div>
 
 const Global = () =>
   <Router>
@@ -23,6 +28,7 @@ const Global = () =>
       <div style={titleDiv}>
         <h1 style={title}>Matcha !</h1>
       </div>
+     
     </div>
   </Router>
 

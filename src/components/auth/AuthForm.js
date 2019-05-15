@@ -11,19 +11,21 @@ const AuthForm = ({
 }) => (
 		<div style={css.signupSection}>
 			<div style={css.info}>
-	    <h2>Welcome to Matcha</h2>
+	    <h2>Welcome back</h2>
 	    <i style={css.icon}  aria-hidden="true"></i>
-	    <p>find love</p>
+	    <p>find love now!</p>
 	  </div>
 			<form style={css.signupForm} onSubmit={onSubmit}>
 			<ul style={css.noBullet}>
 				<li>
-					<h4 >Authentication</h4>
+					<h4 >Login</h4>
 				</li>
 				<li>
 					<div>
 					<input
 						style={css.inpuFields}
+						autoComplete="off"
+						placeholder="email adress or username"
 						label="Email"
 						name="email"
 						onChange={onChange}
@@ -34,6 +36,8 @@ const AuthForm = ({
 					<div>
 					<input
 						style={css.inpuFields}
+						autoComplete="off"
+						placeholder="password"
 						label="Password"
 						type="password"
 						name="password"

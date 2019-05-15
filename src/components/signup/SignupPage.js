@@ -15,7 +15,8 @@ class SignupForm extends React.Component {
     this.state = {
       user: {
         email: '',
-        password: ''
+        password: '',
+        password2: ''
       },
       error: {},
     };
@@ -25,11 +26,12 @@ class SignupForm extends React.Component {
   handleSubmit(event) {
     const {
       email,
-      passOne
-    } = this.state;
+      passOne,
+      passTwo
+    } = this.state.user;
     const { history } = this.props;
   //  auth.testDB(this.state.email);
-  console.log(this.state.email)
+  console.log(this.state.user)
     event.preventDefault();
   };
 

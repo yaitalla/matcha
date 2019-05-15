@@ -1,7 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const database = require('./config/database/db');
 const app = express();
+const mysql = require('mysql');
+
+const con = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'yaitalla',
+  password : 'supersecretmatcha',
+  database : 'matcha_db'
+});
+
+con.connect((err) => {
+  if (err) throw err;
+  console.log("Connected!");
+});
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
