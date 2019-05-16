@@ -15,6 +15,22 @@ export const item = {
   flexDirection: "row",
   margin: "25px",
 }
+
+export const btn = {
+  transition: ".2s",
+  textShadow: "1px 1px #f4429b",
+  color: '#e820bc',
+  textAlign: "center",
+  boxShadow: "3px 10px 20px 5px black",
+  fontFamily: 'cursive',
+  fontSize: "18px",
+  width: "100px",
+  height: '80px',
+  borderRadius: "40px",
+  cursor: "pointer",
+  background: "rgba(255, 226, 248, .2)"
+}
+
 export const signupbtn = {
   textAlign: "center",
   boxShadow: "3px 10px 20px 5px black",
